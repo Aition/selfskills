@@ -1,4 +1,4 @@
 interface:
   display_name: "产品需求架构"
-  short_description: "从产品目标出发，将零散输入转化为精简、闭环且可验收的需求"
-  default_prompt: "Use $product-requirement-architect 从产品目标、现状证据、业务闭环和验收标准梳理并迭代这份需求。"
+  short_description: "从产品目标出发，完成需求整理、分析、评估与闭环验收"
+  default_prompt: "Use $product-requirement-architect 从产品目标、现状证据、业务闭环和验收标准整理、分析或评估这份需求。"

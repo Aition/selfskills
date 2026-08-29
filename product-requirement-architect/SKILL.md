@@ -1,6 +1,6 @@
 ---
 name: product-requirement-architect
-description: Turn product or feature inputs from Word files, screenshots, handoff documents, notes, and stakeholder feedback into concise, traceable, closed-loop requirements. Use when the user asks to “整理需求、梳理需求、完善需求、优化需求、审查需求、更新 PRD” or says “帮我整理一下这个需求” while the surrounding context concerns a product, feature, system, page, activity, or operational workflow. Also use for current-to-target reconstruction, scope trimming, field/display mapping, workflow and data closure, and acceptance criteria. Do not use for document formatting or general summarization, meeting notes, implementation plans, code changes, or architecture-only work.
+description: Turn product or feature inputs from Word files, screenshots, handoff documents, notes, and stakeholder feedback into concise, traceable, closed-loop requirements. Use when the user asks to “整理需求、梳理需求、分析需求、评估需求、完善需求、优化需求、审查需求、更新 PRD” or says “帮我整理/分析/评估一下这个需求” while the surrounding context concerns a product, feature, system, page, activity, or operational workflow. Also use for current-to-target reconstruction, value and scope evaluation, field/display mapping, workflow and data closure, and acceptance criteria. Do not use for document formatting or general summarization, meeting notes, implementation plans, code changes, investment evaluation, technical evaluation, or architecture-only work.
 ---
 
 # Product Requirement Architect
@@ -9,11 +9,14 @@ Turn fragmented product inputs into one concise source of truth that explains th
 
 ## Select the assignment
 
+- **Analyze:** decompose an input into product goal, users, current and target behavior, objects, rules, states, data, dependencies, risks, and unresolved decisions.
+- **Evaluate:** judge whether a proposed requirement is necessary, evidence-backed, correctly scoped, closed-loop, operable, and testable; identify missing or unnecessary work.
 - **Shape:** convert raw inputs into the first executable product requirement.
-- **Audit:** compare an existing requirement with its evidence and expose omissions, contradictions, unsupported additions, and dead functions.
 - **Evolve:** apply stakeholder corrections to the same requirement, propagate them across the document, and revalidate the product loop.
 
 Do not force a full PRD when the user only needs a focused feature specification. Match the artifact to the decision and delivery risk.
+
+For analysis-only work, explain the product structure, relationships, gaps, and material implications without silently rewriting the requirement. For evaluation-only work, return a clear verdict, evidence, blocking gaps or contradictions, missing or unnecessary scope, decisions required, and the recommended correction order. Do not invent a numeric score or produce a rewritten PRD unless the user requests it.
 
 ## Establish the evidence baseline
 
