@@ -34,6 +34,8 @@ Use these gates before presenting a requirement as delivery-ready.
 - One-time migration or cleanup is separated from permanent product functionality.
 - Every material child control and rule in an affected existing path is explicitly retained, changed, removed, or marked not applicable.
 - Reuse statements preserve evidenced sub-configurations such as per-user quantity, mode-specific bindings, records, and actions where they affect the flow.
+- Material screenshot structure is translated into a text-only layout contract when images will not accompany the requirement.
+- Page regions, columns, repeated components, component information order, field order/control types, and click targets are clear enough to reconstruct without the source image.
 
 ## 5. Workflow closure
 
@@ -69,6 +71,7 @@ Use these gates before presenting a requirement as delivery-ready.
 - Important field-to-display, configuration-to-decision, state, failure, and migration rules are testable.
 - Acceptance criteria do not introduce behavior absent from the requirement.
 - Explicit asks, later corrections, current controls, reused sub-configurations, requested operations functions, exception paths, history rules, and exclusions all pass a source-to-requirement coverage audit.
+- A delivery reader can implement the functional page hierarchy without needing access to source screenshots; unsupported visual details remain design dependencies rather than invented requirements.
 
 ## Verdict
 

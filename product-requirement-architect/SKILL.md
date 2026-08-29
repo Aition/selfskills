@@ -69,6 +69,8 @@ For every existing path touched by the change, create an internal retention ledg
 
 Create a small terminology map when similar concepts may be confused. One business object gets one stable name. Prefer business nouns for fields and action wording for buttons or placeholders.
 
+When screenshots or mockups carry material structure that the final requirement will not embed, translate that evidence into a text-only layout contract. Capture page-region order, column relationships, repeated grid/list structure, component-internal information order, field order and control type, click targets, and which existing modules remain. A reader without the source image must be able to reconstruct the functional hierarchy. Use a compact ASCII wireframe or structured list when it is clearer than prose. Do not invent pixel sizes, colors, breakpoints, or responsive behavior that the evidence does not establish; explicitly preserve the existing design rule or mark a design dependency instead.
+
 ## Build the product model
 
 Define only the objects and relations needed to explain the behavior:
