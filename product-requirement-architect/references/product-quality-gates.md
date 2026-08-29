@@ -9,6 +9,8 @@ Use these gates before presenting a requirement as delivery-ready.
 - Provided facts, confirmed additions, and assumptions remain distinguishable.
 - Later additions are not falsely presented as originating in the original document.
 - Supplied answers are reused instead of being asked again.
+- Material source items have a disposition: retained, changed, excluded, unresolved, or superseded.
+- Tentative stakeholder wording is not treated as a confirmed final term without later adoption or approval.
 
 ## 2. Product value
 
@@ -30,6 +32,8 @@ Use these gates before presenting a requirement as delivery-ready.
 - Retained capability is separated from required change.
 - The requirement extends the real system instead of inventing an unrelated replacement.
 - One-time migration or cleanup is separated from permanent product functionality.
+- Every material child control and rule in an affected existing path is explicitly retained, changed, removed, or marked not applicable.
+- Reuse statements preserve evidenced sub-configurations such as per-user quantity, mode-specific bindings, records, and actions where they affect the flow.
 
 ## 5. Workflow closure
 
@@ -38,6 +42,7 @@ Use these gates before presenting a requirement as delivery-ready.
 - Every configuration field has an owner, stored value, consumer, and edit/disable rule where applicable.
 - Every visible value has a backend or external source.
 - Every new stored field has a visible, operational, decision, or reporting consumer.
+- Every material failure or retry state has a named operator view and recovery action when human handling is required.
 
 ## 6. State, exception, and history
 
@@ -63,6 +68,7 @@ Use these gates before presenting a requirement as delivery-ready.
 - Each primary path has end-to-end acceptance evidence.
 - Important field-to-display, configuration-to-decision, state, failure, and migration rules are testable.
 - Acceptance criteria do not introduce behavior absent from the requirement.
+- Explicit asks, later corrections, current controls, reused sub-configurations, requested operations functions, exception paths, history rules, and exclusions all pass a source-to-requirement coverage audit.
 
 ## Verdict
 

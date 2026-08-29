@@ -37,6 +37,8 @@ Track three evidence classes while working:
 - **Confirmed:** added or approved during discussion.
 - **Assumed:** a necessary interpretation that remains unconfirmed.
 
+Maintain a compact internal evidence ledger while reading. For each material source item, record its authority, whether it describes current behavior or target intent, the requirement sections it affects, and its final disposition: retained, changed, excluded, unresolved, or superseded. Distinguish tentative wording and stakeholder questions from confirmed decisions; a suggested label does not become final until later context adopts or approves it.
+
 Never silently convert an assumption into a requirement. Ask only when the decision materially changes users, business rules, data, permissions, money, migration, or irreversible scope. Otherwise take the smallest reversible interpretation and expose it in the result.
 
 ## Frame the product before the feature list
@@ -62,6 +64,8 @@ Current behavior
 ```
 
 Preserve working capabilities unless the user explicitly replaces them. Do not describe an imagined replacement system when the request is an extension of an existing one.
+
+For every existing path touched by the change, create an internal retention ledger down to the material child controls and rules, not only the module name. Mark each evidenced field, sub-configuration, state, action, and operator view as retained, changed, removed, or not applicable. A statement such as “reuse the existing reward configuration” is insufficient when the source also establishes material controls such as per-user quantity, level-specific binding, failure records, or retry actions.
 
 Create a small terminology map when similar concepts may be confused. One business object gets one stable name. Prefer business nouns for fields and action wording for buttons or placeholders.
 
@@ -91,6 +95,8 @@ Actor/entry
 ```
 
 For every configurable field, establish who owns it, whether it is required, what is stored, where it is consumed, and what changes when it is edited or disabled. For every visible value, identify its source. Remove fields and functions with no consumer.
+
+For every material failure or retry path, identify both the resulting state and the operator surface used to discover, inspect, and resolve it. A backend failure state without a named operational consumer is not a closed loop.
 
 ## Shape scope and priority
 
@@ -122,6 +128,8 @@ Cover the relevant behavior, not every possible PRD section:
 - dependencies, risks, migration, and unresolved decisions only when they affect delivery.
 
 Write acceptance criteria as observable, binary pass/fail statements. Tie each criterion to a requirement already defined; acceptance must not introduce new behavior.
+
+Before completion, run a source-to-requirement coverage audit across: explicit user asks, later corrections, current UI controls, reused sub-configurations, requested operations functions, exception/retry paths, historical behavior, and excluded work. Every material item must be traceable to a requirement, a deliberate exclusion, or a visible unresolved decision. Do not accept module-level coverage when a material child rule can change money, eligibility, inventory, attribution, or an operator's ability to recover a failure.
 
 Read [references/product-quality-gates.md](references/product-quality-gates.md) before calling the work complete. Use [references/product-delivery-template.md](references/product-delivery-template.md) as a menu when producing the final Markdown.
 
